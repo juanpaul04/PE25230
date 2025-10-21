@@ -2,7 +2,6 @@
 
 
 
-
 * {
     padding: 0;
     margin: 0;
@@ -240,10 +239,12 @@ form{
     }
 }
 
+
 @media (max-width: 870px){
     .container-pag{
-        display: flex;
-        flex-direction: column;
+       /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "footer"; */
 
         h1{
        
@@ -260,19 +261,17 @@ form{
 
 
         .header{
-            order:1;
             width: 100%;
             padding: 2em;
         }
         .nav{
-            order:2;
             width: 100%;
 
             ul{
                 list-style: none;
                 text-align: center;
                 font-family: "Lexend";
-                font-size: 0.7em;
+                font-size: 0.6em;
                 font-weight: 600;
                 padding-top: 0.7em;
             }
@@ -285,26 +284,92 @@ form{
             }
             li{
                 display : inline;
-                padding: 0.4em;
+                padding: 0.3em;
                 border: 0.5px solid;
                 border-radius: 1%;
-                margin:3em;
+                margin:2em;
             }
 
             
         }
         .main{
-            order: 3;
             width: 100%;
+
+
+            form{
+
+                label{
+                    font-family: "Lexend";
+                    padding: 1em;
+                    font-size: 1em;
+                    display: block;
+                    
+                    input{
+                        font-size: 1em;
+                    }
+            
+                  
+                }
+            
+                select{
+                    font-size: 1em;
+                    margin: 1em;
+                }
+                p{
+                    font-family: "Lexend";
+                    padding: 1em;
+                    font-size: 1em;
+                }
+            
+                textarea{
+                    font-family: "Lexend";
+                    padding: 1em;
+                    font-size: 1em;
+                }
+            
+                button{
+                    font-family: "Lexend";
+                    font-size: 1em;
+                    margin: 1em;
+                }
+            }
+
 
         }
 
         .footer{
-            order:4;
             width: 100%;
+
+
+            ul{
+                list-style: none;
+                text-align: center;
+                font-size: 1em;
+                font-weight: 600;
+                padding-top: 2em;
+            }
+            
+            a{
+                color: black;
+                font-family: "Lexend";
+            }
+            li{
+                display : inline;
+                padding: 0.5em;
+                margin:1.2em;
+            }
         }
+
+
+        
 
     
     }
+    
 
 }
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
